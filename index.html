@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Visitor Logger | Serverless Visitor Tracking</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+
+    <header class="hero">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-brands fa-aws"></i>
+                AWS Visitor Logger
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#features">Features</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="hero-content">
+
+            <div class="tag">
+                SERVERLESS AWS PROJECT
+            </div>
+
+            <h1>
+                Real-Time Visitor Tracking
+                Using AWS Serverless Architecture
+            </h1>
+
+            <p>
+                Automatically capture visitor IP addresses and timestamps
+                using API Gateway, Lambda and DynamoDB.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn" onclick="logVisit()">
+                    <i class="fa-solid fa-cloud"></i>
+                    Record Visit
+                </button>
+
+                <a href="#architecture" class="secondary-btn">
+                    Architecture
+                </a>
+
+            </div>
+
+            <div id="status" class="status-box">
+                Waiting for visitor request...
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Metrics -->
+
+    <section class="metrics">
+
+        <div class="metric-card">
+            <h2>6</h2>
+            <p>AWS Services Used</p>
+        </div>
+
+        <div class="metric-card">
+            <h2>100%</h2>
+            <p>Serverless Backend</p>
+        </div>
+
+        <div class="metric-card">
+            <h2>24/7</h2>
+            <p>Available API Endpoint</p>
+        </div>
+
+        <div class="metric-card">
+            <h2>Real-Time</h2>
+            <p>Visitor Logging</p>
+        </div>
+
+    </section>
+
+
+    <!-- Overview -->
+
+    <section id="overview" class="overview">
+
+        <h2>Project Overview</h2>
+
+        <p>
+            AWS Visitor Logger is a cloud-native serverless application
+            designed to track website visitors in real time.
+        </p>
+
+        <p>
+            Every time a visitor opens this website,
+            JavaScript automatically triggers an API request,
+            invoking AWS Lambda which stores visitor details
+            in DynamoDB.
+        </p>
+
+    </section>
+
+
+    <!-- AWS Services -->
+
+    <section id="services" class="services">
+
+        <h2>AWS Services Used</h2>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <i class="fa-brands fa-aws"></i>
+                <h3>Amazon EC2</h3>
+                <p>Hosts the frontend application.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3>API Gateway</h3>
+                <p>Receives visitor requests.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>AWS Lambda</h3>
+                <p>Processes visitor data.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>DynamoDB</h3>
+                <p>Stores visitor records.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>CloudWatch</h3>
+                <p>Stores logs and metrics.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>IAM</h3>
+                <p>Handles permissions securely.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Architecture -->
+
+    <section id="architecture" class="architecture">
+
+        <h2>Architecture Workflow</h2>
+
+        <div class="flow">
+
+            <div class="flow-card">Browser</div>
+            <div class="arrow">→</div>
+
+            <div class="flow-card">API Gateway</div>
+            <div class="arrow">→</div>
+
+            <div class="flow-card">Lambda</div>
+            <div class="arrow">→</div>
+
+            <div class="flow-card">DynamoDB</div>
+            <div class="arrow">→</div>
+
+            <div class="flow-card">CloudWatch</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+
+    <section id="features" class="features">
+
+        <h2>Project Features</h2>
+
+        <div class="feature-list">
+
+            <div class="feature-item">
+                ✅ Real-time visitor tracking
+            </div>
+
+            <div class="feature-item">
+                ✅ Automatic IP address collection
+            </div>
+
+            <div class="feature-item">
+                ✅ Timestamp logging
+            </div>
+
+            <div class="feature-item">
+                ✅ Serverless architecture
+            </div>
+
+            <div class="feature-item">
+                ✅ CloudWatch monitoring
+            </div>
+
+            <div class="feature-item">
+                ✅ Scalable backend
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>AWS Visitor Logger Project</h3>
+
+        <p>
+            Built using EC2, API Gateway, Lambda,
+            DynamoDB, IAM and CloudWatch.
+        </p>
+
+        <p>
+            Designed for GitHub Portfolio and AWS Placements.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
